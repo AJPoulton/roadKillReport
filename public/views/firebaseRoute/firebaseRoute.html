@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body ng-controller="firebaseCtrl" ng-app='roadKillReport'>
+
+
+<input type="text" ng-model="location">
+<input type="text" ng-model="species">
+<button ng-click="post()">done</button>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+<script src="http://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+<script src="http://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.js'></script>
+<script src="/js/app.js"></script>
+<script src="firebaseCtrl.js"></script>
+<script src="firebaseService.js"></script>
+</body>
+</html>

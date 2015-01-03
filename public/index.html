@@ -1,0 +1,38 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Road Kill Report</title>
+		<link rel="stylesheet" type="text/css" href="styles/RKRstyles.css">
+
+		<link rel="stylesheet" type="text/css" href="js/lib/sweet-alert.css">
+	</head>
+
+	<body>
+		<div ng-app="roadKillReport">
+			<img class="bg-img" src="images/road-background.jpg">
+
+			<div class="content">
+				<div class="top">WELCOME TO ROADKILL REPORT
+				</div>
+				<div ng-view></div>
+				<div id="map"></div>
+				
+			</div>
+
+			<div class="bottom">Site Information | Contact Us | Primier User Content
+			</div>
+		</div>
+
+		<script src="assets/bower_components/angular/angular.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
+		<script src="assets/bower_components/lodash.min.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="assets/bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
+		<script src="js/lib/sweet-alert.min.js"></script>
+		<script src="js/Controllers/gmaps.js"></script>
+
+		<script src="js/app.js"></script>
+		<script src="views/locationRoute/locationCtrl.js"></script>
+		<script src="js/Services/locationService.js"></script>
+	</body>
+	</html>
